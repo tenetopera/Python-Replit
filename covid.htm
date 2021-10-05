@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html
+    lang="en-us"
+    data-cw-private-path-prefix=""
+    data-cw-private-build-number="2105HotfixDev13"
+    data-cw-private-mastering-number="2105HotfixDev13"
+>
+    <head>
+        
+            
+                <script type="text/javascript">
+                    (function() {
+                        var html = document.documentElement;
+                        var buildNumberAttribute = 'data-cw-private-build-number';
+                        var masteringNumberAttribute = 'data-cw-private-mastering-number';
+
+                        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS = {
+                            buildNumber: html.getAttribute(buildNumberAttribute),
+                            masteringNumber: html.getAttribute(masteringNumberAttribute),
+                            locale: html.getAttribute("lang")
+                        };
+                        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS.jsFiles = [];
+                    })();
+                </script>
+                
+                    <script type="text/javascript">
+                        window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS.jsFiles.push("/applications/covid19-mobility/2105HotfixDev13/en-us/main.js");
+                    </script>
+                
+                <script type="text/javascript" crossorigin="anonymous">"use strict";var _CW_BUILD_INFO=window._BUILD_INFO_FOR_GLOBAL_ERROR_HANDLERS,filterIndexHtml=".*\\/index\\.html",filterMainJs=".*("+_CW_BUILD_INFO.jsFiles.join("|")+")",regexIndexHtml=new RegExp(filterIndexHtml),regexMainJs=new RegExp(filterMainJs);function logMessageToParent(a,b){if(!(window&&window.parent&&window===window.parent||!window.parent.postMessage)){var c=window.location.pathname,d=_CW_BUILD_INFO.buildNumber,e=_CW_BUILD_INFO.masteringNumber;window.parent.postMessage(JSON.stringify({appName:c,buildNumber:d,masteringNumber:e,args:[a,b],isCloudOSMessage:!0,methodName:"recordApplicationMessage"}),"*")}}function buildMessageFromErrorEvent(a){var b=a.detail,c=b.error;return{error:c&&c.message?c.message:b.message,url:b.filename,lineNumber:b.lineno,columnNumber:b.colno,stack:c?c.stack:"not available"}}function defaultErrorFilter(a){var b=a.filename;if(!b||regexIndexHtml.test(b)){var c=a.error&&a.error.stack;if(c){var d=c.split("\n");b=d[1]||d[0]}}return regexMainJs.test(b)}function defaultFatalErrorHandler(a){var b=buildMessageFromErrorEvent(a);b.isFatal=!0,logMessageToParent("OnFatalError",b)}function defaultNonFatalErrorHandler(a){var b=buildMessageFromErrorEvent(a);b.isFatal=!1,logMessageToParent("OnNonFatalError",b)}function buildMessageFromRejectionEvent(a){var b=a.detail,c=b.nativeEvent.reason,d=c.stack||{};if("string"!=typeof d)return{error:"unknown"};var e=d.split("\n"),f=1<e.length?e[0]:e[0].substring(0,80),g=(e[1]||e[0]).match(/at (.*\/main\.js):([0-9]+):([0-9]+)/);return g?{error:f,url:g[1],lineNumber:g[2],columnNumber:g[3],stack:d}:{error:f,stack:d}}function defaultUnhandledRejectionFilter(a){var b=a.reason;if(b){var c,d=b.stack,e=b.sourceURL;if(e)c=e;else if(d){var f=d.split("\n");c=f[1]||f[0]}return regexMainJs.test(c)}return!1}function defaultFatalUnhandledRejectionHandler(a){var b=buildMessageFromRejectionEvent(a);b.isFatal=!0,logMessageToParent("OnFatalUnhandledRejection",b)}function defaultNonFatalUnhandledRejectionHandler(a){var b=buildMessageFromRejectionEvent(a);b.isFatal=!1,logMessageToParent("OnNonFatalUnhandledRejection",b)}window.__globalErrorCatcherDefaults={defaultErrorFilter:defaultErrorFilter,defaultFatalErrorHandler:defaultFatalErrorHandler,defaultNonFatalErrorHandler:defaultNonFatalErrorHandler,defaultUnhandledRejectionFilter:defaultUnhandledRejectionFilter,defaultFatalUnhandledRejectionHandler:defaultFatalUnhandledRejectionHandler,defaultNonFatalUnhandledRejectionHandler:defaultNonFatalUnhandledRejectionHandler};</script>
+            
+            <script type="text/javascript" crossorigin="anonymous">"use strict";try{var event=new window.CustomEvent("test",{cancelable:!0});event.preventDefault()}catch(a){var PolyFillCustomEvent=function(a,b){var c;return b=b||{bubbles:!1,cancelable:!1,detail:void 0},c=document.createEvent("CustomEvent"),c.initCustomEvent(a,b.bubbles,b.cancelable,b.detail),c};PolyFillCustomEvent.prototype=window.Event.prototype,window.CustomEvent=PolyFillCustomEvent}var globalDefaults=window.__globalErrorCatcherDefaults,defaultErrorFilter=globalDefaults.defaultErrorFilter,defaultFatalErrorHandler=globalDefaults.defaultFatalErrorHandler,defaultNonFatalErrorHandler=globalDefaults.defaultNonFatalErrorHandler,defaultUnhandledRejectionFilter=globalDefaults.defaultUnhandledRejectionFilter,defaultFatalUnhandledRejectionHandler=globalDefaults.defaultFatalUnhandledRejectionHandler,defaultNonFatalUnhandledRejectionHandler=globalDefaults.defaultNonFatalUnhandledRejectionHandler;(function(){function a(a){var c,d="";d=b(a)?"FatalError":"NonFatalError",c=new CustomEvent(d,{detail:{error:a.error,message:a.message,filename:a.filename,lineno:a.lineno,colno:a.colno}}),window.dispatchEvent(c)}var b=defaultErrorFilter;window.addEventListener("FatalError",defaultFatalErrorHandler),window.addEventListener("NonFatalError",defaultNonFatalErrorHandler),window.addEventListener("error",a),window.__startFilteringErrors=function(a,c,d){b=a,window.removeEventListener("FatalError",defaultFatalErrorHandler),window.removeEventListener("NonFatalError",defaultNonFatalErrorHandler),c&&d&&(window.addEventListener("FatalError",c),window.addEventListener("NonFatalError",d)),window.__startFilteringErrors=function(){throw new Error("__startFilteringErrors can currently only be invoked once")}}})(),function(){function a(a){var c,d="";d=b(a)?"FatalUnhandledRejection":"NonFatalUnhandledRejection",c=new CustomEvent(d,{detail:{nativeEvent:a}}),window.dispatchEvent(c)}var b=defaultUnhandledRejectionFilter;window.addEventListener("FatalUnhandledRejection",defaultFatalUnhandledRejectionHandler),window.addEventListener("NonFatalUnhandledRejection",defaultNonFatalUnhandledRejectionHandler),window.addEventListener("unhandledrejection",a),window.__startFilteringUnhandledRejections=function(a,c,d){b=a,window.removeEventListener("FatalUnhandledRejection",defaultFatalUnhandledRejectionHandler),window.removeEventListener("NonFatalUnhandledRejection",defaultNonFatalUnhandledRejectionHandler),c&&d&&(window.addEventListener("FatalUnhandledRejection",c),window.addEventListener("NonFatalUnhandledRejection",d)),window.__startFilteringUnhandledRejections=function(){throw new Error("__startFilteringUnhandledRejections can currently only be invoked once")}}}();</script>
+        
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="twitter:site" content="@apple" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="description" content="COVIDâ19 mobility trends. Reports are published daily and reflect requests for directions." />
+        
+        <meta property="og:description" content="COVIDâ19 mobility trends. Reports are published daily and reflect requests for directions." />
+        <meta property="og:site_name" content="Apple" />
+        <meta property="og:title" content="COVIDâ19 - Mobility Trends Reports - Apple" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.apple.com/covid19/mobility" />
+        <meta property="og:image" content="https://covid19-static.cdn-apple.com/applications/covid19-mobility/current/static/og_image_v1.png" />
+        
+        <link rel="canonical" href="https://www.apple.com/covid19/mobility" />
+        
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>COVIDâ19 - Mobility Trends Reports - Apple</title>
+        <base href="https://covid19-static.cdn-apple.com">
+        
+        <link rel="icon" href="/favicon.ico">
+        
+        <script type="text/javascript">
+            (function() {
+                var html = document.documentElement;
+                var pathPrefixAttribute = 'data-cw-private-path-prefix';
+                var buildNumberAttribute = 'data-cw-private-build-number';
+                var masteringNumberAttribute = 'data-cw-private-mastering-number';
+
+                window.__CW_PATH_PREFIX = html.getAttribute(pathPrefixAttribute);
+                window.__CW_BUILD_INFO = {
+                    buildNumber: html.getAttribute(buildNumberAttribute),
+                    masteringNumber: html.getAttribute(masteringNumberAttribute),
+                    locale: html.getAttribute("lang")
+                };
+
+                html.removeAttribute(pathPrefixAttribute);
+                html.removeAttribute(buildNumberAttribute);
+                html.removeAttribute(masteringNumberAttribute);
+            })();
+        </script>
+        
+    </head>
+
+    <body>
+        
+        
+        
+        
+
+        
+        <link rel="stylesheet" href="/applications/covid19-mobility/2105HotfixDev13/en-us/main.css" />
+        
+
+        
+        <script type="text/javascript" src="/applications/covid19-mobility/2105HotfixDev13/en-us/main.js" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
